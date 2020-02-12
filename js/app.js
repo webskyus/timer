@@ -7,8 +7,8 @@ window.addEventListener('DOMContentLoaded', function () {
 			thisYear = new Date(),
 			nextYear = thisYear.getFullYear() + 1,
 			days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-			month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September',
-			'Octover', 'November', 'December'];
+			month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 
+			'September','Octover', 'November', 'December'];
 
 
 			deadline = nextYear + '-1-1';
@@ -74,6 +74,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 		function updateDate() { 
 			let t = getTimingNow();
+			
 			year.textContent = t.year;
 			month.textContent = t.month;
 			days.textContent = t.days;
